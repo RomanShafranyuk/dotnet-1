@@ -6,14 +6,15 @@ using System.Threading.Tasks;
 
 namespace Binary_operations
 {
-    internal struct Numbers
+    public struct Numbers
     {
-        public int lhs;
-        public int rhs;
+        public int lhs { get; set;}
+        public int rhs { get; set; }
 
         public Numbers(int left, int right) { lhs = left; rhs = right; }
 
-        public void change_left_number(int left) {
+        public void change_left_number(int left)
+        {
             lhs = left;
         }
 

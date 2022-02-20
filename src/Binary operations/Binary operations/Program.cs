@@ -1,6 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using Binary_operations.Commands;
+using Lab1.Infrastructure;
+using Microsoft.Extensions.DependencyInjection;
+using Spectre.Console.Cli;
 
 namespace Binary_operations
 {
@@ -8,13 +9,26 @@ namespace Binary_operations
     {
         static void Main(string[] args)
         {
-            int choice = 0;
-            var nums = new Numbers(1, 2);
-            Operations sum = new Sum(nums);
-            Operations sub = new Substraction(nums);
-            List<Operations> operations = new() { sub, sum };
-            Console.WriteLine(operations.Min(operation => operation.Get_result()));
-            //Console.WriteLine(sub.Get_result());
+            var serviceCollection = new ServiceCollection();
+            serviceCollection.AddSingleton<IOperationRepository, XmlOperationRepository>();
+
+            var registrar = new TypeRegistrar(serviceCollection);
+            var app = new CommandApp(registrar);
+
+            app.Configure(config =>
+            {
+                config.AddCommand<AddOperationCommand>("add");
+                config.AddCommand<GetAllOperationsCommand>("print");
+                config.AddCommand<RemoveOperationCommand>("delete");
+                config.AddCommand<RemoveAllCollection>("clear");
+                config.AddCommand<MinOperation>("min");
+                config.AddCommand<ComparingOperationsCommand>("compare");
+            });
+            app.Run(args);
+
+            IOperationRepository operations_repository = new XmlOperationRepository();
+            
+            
         }
     }
 }

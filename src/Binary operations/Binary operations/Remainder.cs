@@ -6,20 +6,42 @@ using System.Threading.Tasks;
 
 namespace Binary_operations
 {
-    internal class Remainder : Operations
+    public class Remainder : Operation
     {
         public Numbers nums;
 
         public Remainder() { }
 
-        public Remainder(Numbers n)
+        public Remainder(int l, int r)
         {
-            nums = n;
+            nums.lhs = l;
+            nums.rhs = r;
         }
 
-        public override int Get_result()
+        public override int GetResult()
         {
-            return nums.rhs % nums.lhs;
+            return nums.lhs % nums.rhs;
+        }
+        public override bool Equals(object obj)
+        {
+            if (obj == null)
+                return false;
+            if (obj.GetType().Name == GetType().Name)
+            {
+                Remainder add = obj as Remainder;
+                return add.nums.lhs == nums.lhs && add.nums.rhs == nums.rhs;
+            }
+            return false;
+        }
+        public override int GetHashCode()
+        {
+            int hashcode = this.nums.lhs.GetHashCode();
+            hashcode = 31 * hashcode + nums.rhs.GetHashCode();
+            return hashcode;
+        }
+        public override string ToString()
+        {
+            return $"{nums.lhs} % {nums.rhs}";
         }
     }
 }

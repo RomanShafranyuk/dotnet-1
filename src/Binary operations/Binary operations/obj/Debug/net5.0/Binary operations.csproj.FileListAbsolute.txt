@@ -14,3 +14,10 @@ C:\Users\bailr\source\repos\dotnet_lab1\src\Binary operations\Binary operations\
 C:\Users\bailr\source\repos\dotnet_lab1\src\Binary operations\Binary operations\obj\Debug\net5.0\ref\Binary operations.dll
 C:\Users\bailr\source\repos\dotnet_lab1\src\Binary operations\Binary operations\obj\Debug\net5.0\Binary operations.pdb
 C:\Users\bailr\source\repos\dotnet_lab1\src\Binary operations\Binary operations\obj\Debug\net5.0\Binary operations.genruntimeconfig.cache
+C:\Users\bailr\source\repos\dotnet_lab1\src\Binary operations\Binary operations\bin\Debug\net5.0\Spectre.Console.dll
+C:\Users\bailr\source\repos\dotnet_lab1\src\Binary operations\Binary operations\obj\Debug\net5.0\Binary operations.csproj.CopyComplete
+C:\Users\bailr\source\repos\dotnet_lab1\src\Binary operations\Binary operations\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\bailr\source\repos\dotnet_lab1\src\Binary operations\Binary operations\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\bailr\source\repos\dotnet_lab1\src\Binary operations\Binary operations\bin\Debug\net5.0\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\bailr\source\repos\dotnet_lab1\src\Binary operations\Binary operations\obj\Debug\net5.0\Binary_operations.Properties.Resources.resources
+C:\Users\bailr\source\repos\dotnet_lab1\src\Binary operations\Binary operations\obj\Debug\net5.0\Binary operations.csproj.GenerateResource.cache

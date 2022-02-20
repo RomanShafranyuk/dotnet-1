@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "LayHpSCCrF0m2kDBNtrKAVM1bkEhoH3Y9Zyp2KbJkRimao3xJgt/6t6h4J3d3+9rZRKC8h9Cc+iovwkNmOVTEQ==",
+  "dgSpecHash": "jkL2NX3XN+UiQ5bcKIj0+o4aYUFr+rjWiKF1KnzdN46sAOWfm2u7R3/WiWkMOyczOX0PSlKaisq3pAj07s3UMQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\bailr\\source\\repos\\dotnet_lab1\\src\\Binary operations\\Binary operations\\Binary operations.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\bailr\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\6.0.0\\microsoft.extensions.dependencyinjection.6.0.0.nupkg.sha512",
+    "C:\\Users\\bailr\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\6.0.0\\microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512",
+    "C:\\Users\\bailr\\.nuget\\packages\\spectre.console\\0.43.0\\spectre.console.0.43.0.nupkg.sha512",
+    "C:\\Users\\bailr\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
+  ],
   "logs": []
 }

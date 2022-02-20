@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "Binary operations": {
+      "commandName": "Project",
+      "commandLineArgs": "min"
+    }
+  }
+}
